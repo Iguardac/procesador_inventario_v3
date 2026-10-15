@@ -17,15 +17,19 @@ from datetime import datetime
 # durante la ejecución: si cambian, se modifican solo aquí.
 # =========================================================
 RUTA_ENTRADA = "data/inventario_cd.csv"
+RUTA_SALIDA = "ordenes_compra_urgente_v3.csv"
 
 CATEGORIAS_VALIDAS = {"Alimentos", "Bebestibles", "Limpieza",
                       "Higiene Personal", "Mascotas", "Lácteos"}
 COLUMNAS_ENTERAS = ["stock_actual", "stock_minimo", "stock_maximo",
                     "demanda_semanal", "lead_time_dias"]
 COLUMNAS_TEXTO = ["id_producto", "producto", "categoria", "proveedor"]
+COLUMNAS_SALIDA = ["id_producto", "producto", "cantidad_a_reponer",
+                   "costo_total_reposicion", "proveedor", "dias_estimados_reposicion"]
 
 LEAD_TIME_MIN = 1          # días
 LEAD_TIME_MAX = 30         # días
+LEAD_TIME_URGENTE = 5      # días: sobre este valor, un bajo stock es de extrema urgencia
 PATRON_ID = re.compile(r"^[A-Z]\d{3}$")   # letra mayúscula + 3 dígitos (ej. P001)
 
 
@@ -144,7 +148,81 @@ def formatear_error(id_producto, error):
 
 
 # =========================================================
-# SECCIÓN 3: ENTRADA Y SALIDA DE ARCHIVOS
+# SECCIÓN 3: CÁLCULOS
+# =========================================================
+def calcular_reposicion(registro, lead_time_urgente=LEAD_TIME_URGENTE):
+    """
+    Calcula el estado de stock, la cantidad a reponer y el costo de reposición.
+
+    Args:
+        registro (dict): registro válido.
+        lead_time_urgente (int): días sobre los cuales un bajo stock es extrema urgencia.
+
+    Returns:
+        dict: copia del registro con bajo_stock, sobrestock, cantidad_a_reponer,
+              costo_total_reposicion, extrema_urgencia y dias_estimados_reposicion.
+    """
+    resultado = dict(registro)
+    bajo_stock = registro["stock_actual"] < registro["stock_minimo"]
+
+    resultado["bajo_stock"] = bajo_stock
+    resultado["sobrestock"] = registro["stock_actual"] > registro["stock_maximo"]
+    resultado["cantidad_a_reponer"] = registro["stock_maximo"] - registro["stock_actual"] if bajo_stock else 0
+    resultado["costo_total_reposicion"] = round(resultado["cantidad_a_reponer"] * registro["costo_unitario"], 0)
+    resultado["extrema_urgencia"] = bajo_stock and registro["lead_time_dias"] > lead_time_urgente
+    resultado["dias_estimados_reposicion"] = registro["lead_time_dias"] if bajo_stock else 0
+    return resultado
+
+
+def generar_resumen(procesados, descartados, total_leidos):
+    """
+    Reúne los totales del proceso en un diccionario.
+
+    Args:
+        procesados (list): registros válidos con sus cálculos.
+        descartados (list): tuplas (id_producto, errores) de los registros descartados.
+        total_leidos (int): cantidad de filas leídas del archivo.
+
+    Returns:
+        dict: totales, categoría más crítica, alertas por proveedor y motivos de descarte.
+    """
+    bajo_stock = [r for r in procesados if r["bajo_stock"]]
+    urgentes = [r for r in bajo_stock if r["extrema_urgencia"]]
+
+    por_categoria = {}
+    por_proveedor = {}
+    for r in bajo_stock:
+        por_categoria[r["categoria"]] = por_categoria.get(r["categoria"], 0) + 1
+        por_proveedor[r["proveedor"]] = por_proveedor.get(r["proveedor"], 0) + 1
+
+    motivos = {}
+    for _, errores in descartados:
+        for error in errores:
+            motivos[error["regla"]] = motivos.get(error["regla"], 0) + 1
+
+    categoria_critica = max(por_categoria, key=por_categoria.get) if por_categoria else None
+    motivo_principal = max(motivos, key=motivos.get) if motivos else None
+
+    return {
+        "fecha": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "total_leidos": total_leidos,
+        "validos": len(procesados),
+        "descartados": len(descartados),
+        "motivos_descarte": motivos,
+        "motivo_principal": motivo_principal,
+        "bajo_stock": len(bajo_stock),
+        "sobrestock": sum(1 for r in procesados if r["sobrestock"]),
+        "unidades_reponer": sum(r["cantidad_a_reponer"] for r in bajo_stock),
+        "costo_total": sum(r["costo_total_reposicion"] for r in bajo_stock),
+        "categoria_critica": categoria_critica,
+        "cantidad_categoria_critica": por_categoria.get(categoria_critica, 0),
+        "alertas_por_proveedor": por_proveedor,
+        "urgentes": urgentes,
+    }
+
+
+# =========================================================
+# SECCIÓN 4: ENTRADA Y SALIDA DE ARCHIVOS
 # =========================================================
 def leer_csv(ruta=RUTA_ENTRADA, encoding="utf-8"):
     """
@@ -160,21 +238,98 @@ def leer_csv(ruta=RUTA_ENTRADA, encoding="utf-8"):
     with open(ruta, "r", encoding=encoding) as archivo:
         return list(csv.DictReader(archivo))
 
-# =========================================================
-# SECCIÓN 4: PROGRAMA PRINCIPAL
-# =========================================================
-def main(ruta_entrada=RUTA_ENTRADA):
+
+def escribir_csv_salida(ruta, registros, columnas=COLUMNAS_SALIDA):
     """
-    Lee el archivo, valida cada registro y muestra el resumen de la validación.
+    Escribe el archivo CSV con las órdenes de compra urgentes.
+
+    Args:
+        ruta (str): ruta del archivo de salida.
+        registros (list): registros bajo stock a escribir.
+        columnas (list): columnas del archivo. Por defecto, COLUMNAS_SALIDA.
+
+    Returns:
+        int: cantidad de filas escritas.
+    """
+    with open(ruta, "w", encoding="utf-8", newline="") as archivo:
+        escritor = csv.DictWriter(archivo, fieldnames=columnas, extrasaction="ignore")
+        escritor.writeheader()
+        escritor.writerows(registros)
+    return len(registros)
+
+# =========================================================
+# SECCIÓN 5: REPORTE POR CONSOLA
+# =========================================================
+def generar_reporte_consola(resumen):
+    """
+    Imprime el resumen ejecutivo y la recomendación final al Jefe del CD.
+
+    Args:
+        resumen (dict): totales generados por generar_resumen().
+
+    Returns:
+        str: el texto del reporte que se mostró por consola.
+    """
+    lineas = [
+        "===== RESUMEN EJECUTIVO - DIMAULE SpA (v3.0) =====",
+        f"Fecha de proceso           : {resumen['fecha']}",
+        f"Registros leídos           : {resumen['total_leidos']}",
+        f"Registros válidos          : {resumen['validos']}",
+        f"Registros descartados      : {resumen['descartados']}",
+        f"Motivo principal de descarte: {resumen['motivo_principal'] or 'ninguno'} "
+        f"{resumen['motivos_descarte']}",
+        "",
+        f"Productos bajo stock       : {resumen['bajo_stock']}",
+        f"Productos con sobrestock   : {resumen['sobrestock']}",
+        f"Unidades a reponer         : {resumen['unidades_reponer']:,}".replace(",", "."),
+        f"Costo total de reposición  : ${resumen['costo_total']:,.0f}".replace(",", "."),
+        f"Categoría más crítica      : {resumen['categoria_critica']} "
+        f"({resumen['cantidad_categoria_critica']} productos)",
+        "",
+        "--- Alertas por proveedor ---",
+    ]
+    for proveedor, cantidad in sorted(resumen["alertas_por_proveedor"].items()):
+        lineas.append(f"{proveedor}: {cantidad} productos bajo stock")
+
+    lineas.append("")
+    lineas.append(f"--- Casos de extrema urgencia (lead time > {LEAD_TIME_URGENTE} días): "
+                  f"{len(resumen['urgentes'])} ---")
+    for caso in resumen["urgentes"]:
+        lineas.append(f"{caso['id_producto']} - {caso['producto']} ({caso['proveedor']}, "
+                      f"{caso['lead_time_dias']} días)")
+
+    proveedores_urgentes = sorted({c["proveedor"] for c in resumen["urgentes"]})
+    lineas += [
+        "",
+        "--- Recomendación al Jefe del CD ---",
+        f"Emitir de inmediato las {len(resumen['urgentes'])} órdenes de extrema urgencia "
+        f"({', '.join(proveedores_urgentes) or 'sin proveedor'}), priorizar la reposición de "
+        f"{resumen['categoria_critica']} y revisar con Supply Chain los "
+        f"{resumen['descartados']} registros descartados, en especial por "
+        f"{resumen['motivo_principal'] or 'ningún motivo'}, antes de la próxima compra.",
+    ]
+
+    texto = "\n".join(lineas)
+    print(texto)
+    return texto
+
+
+# =========================================================
+# SECCIÓN 6: PROGRAMA PRINCIPAL
+# =========================================================
+def main(ruta_entrada=RUTA_ENTRADA, ruta_salida=RUTA_SALIDA):
+    """
+    Orquesta el flujo completo: leer, validar, calcular, escribir y reportar.
 
     Args:
         ruta_entrada (str): archivo de inventario a procesar.
+        ruta_salida (str): archivo CSV de órdenes urgentes.
 
     Returns:
-        tuple: (validos, descartados) con los registros de cada grupo.
+        int: cantidad de órdenes escritas en el archivo de salida.
     """
     crudos = leer_csv(ruta_entrada)
-    validos, descartados = [], []
+    procesados, descartados = [], []
 
     for fila in crudos:
         id_producto = (fila.get("id_producto") or "").strip()
@@ -182,32 +337,21 @@ def main(ruta_entrada=RUTA_ENTRADA):
         ok_t, registro, errores_t = validar_tipos(fila)
         if not ok_t:
             descartados.append((id_producto, errores_t))
-            for error in errores_t:
-                print(formatear_error(id_producto, error))
             continue
 
         ok_n, errores_n = validar_reglas_negocio(registro)
         if not ok_n:
             descartados.append((id_producto, errores_n))
-            for error in errores_n:
-                print(formatear_error(id_producto, error))
             continue
 
-        validos.append(registro)
+        procesados.append(calcular_reposicion(registro))
 
-    motivos = {}
-    for _, errores in descartados:
-        for error in errores:
-            motivos[error["regla"]] = motivos.get(error["regla"], 0) + 1
-    motivo_principal = max(motivos, key=motivos.get) if motivos else "ninguno"
-
-    print("")
-    print("===== RESUMEN DE VALIDACIÓN =====")
-    print(f"Registros leídos     : {len(crudos)}")
-    print(f"Registros válidos    : {len(validos)}")
-    print(f"Registros descartados: {len(descartados)}")
-    print(f"Motivo principal     : {motivo_principal} {motivos}")
-    return validos, descartados
+    resumen = generar_resumen(procesados, descartados, len(crudos))
+    ordenes = [r for r in procesados if r["bajo_stock"]]
+    escritas = escribir_csv_salida(ruta_salida, ordenes)
+    generar_reporte_consola(resumen)
+    print(f"\nArchivo generado: {ruta_salida} ({escritas} órdenes)")
+    return escritas
 
 
 if __name__ == "__main__":
