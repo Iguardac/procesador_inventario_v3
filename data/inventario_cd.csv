@@ -1,0 +1,501 @@
+id_producto,producto,categoria,stock_actual,stock_minimo,stock_maximo,demanda_semanal,costo_unitario,proveedor,lead_time_dias
+P001,Sémola 500 g,Alimentos,213,34,177,52,760,ProvA,3
+P002,Agua 5 L,Bebestibles,213,68,198,70,1490,ProvB,5
+P003,Quitagrasa 500 ml,Limpieza,29,27,75,26,1890,ProvC,2
+P004,Pasta dental mentol 100 ml,Higiene Personal,35,42,97,12,1290,ProvB,5
+P005,Jugo en caja 1 L,Bebestibles,132,57,164,68,1190,ProvA,4
+P006,Vinagre 500 ml,Alimentos,78,64,167,13,690,ProvC,6
+P007,Crema de leche 200 ml,Lácteos,44,50,177,31,1290,ProvA,3
+P008,Juguete perro,Mascotas,21,17,86,16,2590,ProvC,2
+P009,Jugo naranja natural 1 L,Bebestibles,33,75,136,35,1890,ProvB,5
+P010,Leche de avena 1 L,Lácteos,15,41,160,50,2090,ProvB,4
+P011,Alcohol gel 500 ml,Higiene Personal,88,26,128,25,2990,ProvB,4
+P012,Guantes trabajo M,Ferretería Básica,1,26,96,18,1090,ProvC,6
+P013,Crema de manos 100 ml,Higiene Personal,24,50,97,17,1590,ProvC,6
+P014,Salsa tomate 400 g,Alimentos,74,53,139,38,1090,ProvB,5
+P015,Bebida Cola 1.5 L,Bebestibles,8,62,159,76,1150,ProvA,3
+P016,Leche descremada 1 L,Lácteos,35,46,180,52,1090,ProvC,2
+P017,Tapones oídos x10,Ferretería Básica,75,30,113,17,790,ProvA,3
+P018,Leche de avena 1 L,Lácteos,13,41,160,41,2190,ProvB,5
+P019,Jabón de glicerina 100 g,Higiene Personal,146,50,109,13,690,ProvA,3
+P020,Cinta adhesiva 18mm,Ferretería Básica,35,20,71,10,590,ProvC,6
+P021,Limpiavidrios 500 ml,Limpieza,13,27,64,25,1790,ProvB,5
+P022,Sardinas en tomate 125 g,Alimentos,15,53,156,48,890,ProvC,6
+P023,Mantequilla con sal 200 g,Lácteos,11,66,175,15,2690,ProvC,2
+P024,Chicles sin azúcar 20 g,Snacks y Confitería,100,40,139,45,490,ProvC,2
+P025,Bebida naranja 1.5 L,Bebestibles,209,74,162,9,1490,ProvB,5
+P026,Alimento perro adulto 3 kg,Mascotas,14,15,69,5,8990,ProvB,5
+P027,Frutos secos surtidos 100 g,Snacks y Confitería,1,37,117,29,1490,ProvB,5
+P028,Néctar mango 1 L,Bebestibles,142,44,178,46,1190,ProvC,2
+P029,Guantes trabajo M,Ferretería Básica,14,26,96,12,790,ProvC,2
+P030,Bebida Cola 1.5 L,Bebestibles,80,62,159,66,1550,ProvA,4
+P031,Ampolleta LED 9W,Ferretería Básica,75,35,103,19,1990,ProvA,4
+P032,Pipeta antipulgas gato,Mascotas,12,20,89,15,2590,ProvA,3
+P033,Bebida naranja 1.5 L,Bebestibles,31,74,162,15,1290,ProvB,4
+P034,Alfajores x2,Snacks y Confitería,8,28,99,24,890,ProvA,4
+P035,Caramelos surtidos 200 g,Snacks y Confitería,106,55,142,49,790,ProvA,3
+P036,Suavizante ropa 1 L,Limpieza,29,44,104,9,2390,ProvB,4
+P037,Shampoo hidratante 400 ml,Higiene Personal,59,39,147,33,2890,ProvB,4
+P038,Chupetes 10 un,Snacks y Confitería,40,53,136,34,490,ProvC,6
+P039,Tapones oídos x10,Ferretería Básica,123,30,113,27,790,ProvA,4
+P040,Guantes domésticos M,Limpieza,131,43,105,17,1190,ProvA,4
+P041,Quitamanchas 500 ml,Limpieza,68,31,61,29,2190,ProvA,4
+P042,Té 25 bolsitas,Alimentos,62,62,122,47,1190,ProvB,4
+P043,Cama mascota pequeña,Mascotas,50,18,50,10,6790,ProvC,6
+P044,Crema hidratante 200 ml,Higiene Personal,18,47,123,27,3490,ProvA,3
+P045,Leche 200 ml (caja),Lácteos,106,37,151,47,490,ProvC,2
+P046,Baterías recargables AA x2,Ferretería Básica,37,35,66,12,3090,ProvB,4
+P047,Agua mineral 1.5 L,Bebestibles,29,52,171,34,780,ProvA,3
+P048,Paños de cocina 3 un,Limpieza,5,17,114,16,1290,ProvB,4
+P049,Pila AAA x4,Ferretería Básica,6,15,62,18,1190,ProvB,4
+P050,Cacao en polvo 200 g,Alimentos,206,70,164,57,2090,ProvA,4
+P051,Néctares surtidos 1 L,Bebestibles,35,52,152,22,1090,ProvC,6
+P052,Pasta dental mentol 100 ml,Higiene Personal,15,42,97,20,1490,ProvB,5
+P053,Leche entera 1 L,Lácteos,46,30,152,39,990,ProvB,4
+P054,Leche condensada 397 g,Alimentos,12,57,152,40,1790,ProvC,2
+P055,Suavizante ropa 1 L,Limpieza,92,44,104,10,2490,ProvB,5
+P056,Bebida naranja 1.5 L,Bebestibles,81,74,162,12,1490,ProvB,5
+P057,Maní tostado 200 g,Snacks y Confitería,60,57,123,8,1190,ProvB,5
+P058,Juguete perro,Mascotas,133,17,86,19,2390,ProvC,2
+P059,Leche de avena 1 L,Lácteos,172,41,160,48,2190,ProvB,5
+P060,Ampolleta LED 9W,Ferretería Básica,90,35,103,17,1990,ProvA,3
+P061,Mermelada frutilla 350 g,Alimentos,189,62,163,27,1790,ProvB,5
+P062,Mascarillas descartables 10 un,Higiene Personal,103,28,123,21,1690,ProvA,4
+P063,Suavizante ropa 1 L,Limpieza,11,44,104,10,2490,ProvB,4
+P064,Jugo mora 1 L,Bebestibles,30,43,191,35,1090,ProvC,2
+P065,Gomitas 100 g,Snacks y Confitería,29,30,110,49,590,ProvC,2
+P066,Protector solar FPS50 100 ml,Higiene Personal,39,24,100,4,5190,ProvA,4
+P067,Yogurt bebible 200 ml,Lácteos,36,61,180,43,590,ProvA,3
+P068,Chicles sin azúcar 20 g,Snacks y Confitería,86,40,139,41,690,ProvC,2
+P069,Bolsas plásticas 30 un,Limpieza,115,39,131,10,990,ProvB,4
+P070,Limpiavidrios 500 ml,Limpieza,46,27,64,25,1590,ProvB,4
+P071,Pan molde integral,Alimentos,59,66,140,28,1690,ProvB,5
+P072,Queso gauda laminado 200 g,Lácteos,143,49,189,47,2290,ProvC,6
+P073,Jugo cítrico 1 L,Bebestibles,163,49,123,22,1090,ProvB,4
+P074,Wafers chocolate 150 g,Snacks y Confitería,5,41,141,22,790,ProvC,2
+P075,Arena sanitaria 4 kg,Mascotas,100,12,67,18,3490,ProvA,4
+P076,Leche en polvo 400 g,Alimentos,117,30,187,22,3490,ProvB,5
+P077,Merengues 100 g,Snacks y Confitería,31,45,95,49,990,ProvC,2
+P078,Pipeta antipulgas perro S,Mascotas,38,30,59,7,2490,ProvB,5
+P079,Collar perro ajustable,Mascotas,71,27,74,19,1990,ProvA,4
+P080,Galletas María 200 g,Alimentos,22,65,128,60,690,ProvB,5
+P081,Detergente polvo 1 kg,Limpieza,9,29,129,33,3090,ProvC,6
+P082,Vinagre 500 ml,Alimentos,8,64,167,15,590,ProvC,6
+P083,Desodorante aerosol 150 ml,Higiene Personal,121,48,144,32,2490,ProvC,2
+P084,Pila AAA x4,Ferretería Básica,49,15,62,11,990,ProvB,5
+P085,Chicles sin azúcar 20 g,Snacks y Confitería,57,40,139,35,790,ProvC,2
+P086,Cama mascota pequeña,Mascotas,49,18,50,14,6990,ProvC,6
+P087,Fideos 400 g,Alimentos,18,31,111,33,890,ProvB,4
+P088,Queso gauda laminado 200 g,Lácteos,41,49,189,45,2490,ProvC,2
+P089,Desodorante roll-on 50 ml,Higiene Personal,13,32,131,10,1990,ProvB,5
+P090,Mantequilla 250 g,Alimentos,15,70,120,54,3290,ProvA,4
+P091,Tapones oídos x10,Ferretería Básica,12,30,113,22,790,ProvA,3
+P092,Alimento cachorro 1.5 kg,Mascotas,18,24,56,22,6490,ProvC,2
+P093,Gomitas 100 g,Snacks y Confitería,60,30,110,41,690,ProvC,6
+P094,Pasta dental mentol 100 ml,Higiene Personal,131,42,97,13,1390,ProvB,5
+P095,Cepillo dental suave,Higiene Personal,141,34,123,12,890,ProvA,4
+P096,Detergente polvo 1 kg,Limpieza,112,29,129,30,2990,ProvC,6
+P097,Chicles sin azúcar 20 g,Snacks y Confitería,21,40,139,39,390,ProvC,6
+P098,Limpiavidrios 500 ml,Limpieza,20,27,64,26,1690,ProvB,4
+P099,Bebida sin azúcar 1.5 L,Bebestibles,37,62,160,47,1390,ProvA,3
+P100,Alcohol gel 500 ml,Higiene Personal,11,26,128,15,3390,ProvB,4
+P101,Crema de leche 200 ml,Lácteos,187,50,177,24,1290,ProvA,3
+P102,Bolsas sanitarias 30 un,Mascotas,37,22,70,20,990,ProvC,2
+P103,Depiladora desechable 3 un,Higiene Personal,20,23,108,24,1390,ProvB,5
+P104,Guantes domésticos S,Limpieza,2,19,115,12,1190,ProvC,2
+P105,Puré instantáneo 125 g,Alimentos,200,40,159,39,990,ProvC,6
+P106,Mantequilla con sal 200 g,Lácteos,163,66,175,16,2490,ProvC,6
+P107,Macarrones 400 g,Alimentos,35,70,146,25,870,ProvB,5
+P108,Champú mascotas 250 ml,Mascotas,52,25,52,9,3490,ProvA,4
+P109,Papas fritas 100 g,Snacks y Confitería,24,27,124,49,1090,ProvA,4
+P110,Shampoo hidratante 400 ml,Higiene Personal,17,39,147,34,2990,ProvB,4
+P111,Cola light 1.5 L,Bebestibles,164,46,174,34,1350,ProvB,4
+P112,Miel 500 g,Alimentos,6,46,174,36,3300,ProvC,2
+P113,Lavalozas 750 ml,Limpieza,28,39,90,15,1650,ProvC,2
+P114,Queso parmesano rallado 100 g,Lácteos,45,51,152,57,2990,ProvB,5
+P115,Talco 150 g,Higiene Personal,16,41,118,22,1290,ProvC,2
+P116,Vinagre 500 ml,Alimentos,50,64,167,14,690,ProvC,2
+P117,Sal 1 kg,Alimentos,23,43,143,21,450,ProvC,2
+P118,Cereales 500 g,Alimentos,12,39,133,19,2590,ProvA,4
+P119,Escoba plástica mediana,Limpieza,13,32,61,19,2790,ProvA,4
+P120,Bebida uva 1.5 L,Bebestibles,249,73,191,58,1290,ProvA,4
+P121,Mermelada frutilla 350 g,Alimentos,81,62,163,20,1890,ProvB,4
+P122,Servilletas 100 un,Limpieza,57,21,67,30,390,ProvA,3
+P123,Desodorante roll-on 50 ml,Higiene Personal,13,32,131,9,2090,ProvB,5
+P124,Jabón barra pack 3 un,Limpieza,5,18,69,25,990,ProvA,3
+P125,Ampolleta LED 9W,Ferretería Básica,140,35,103,19,1990,ProvA,3
+P126,Chocapic 500 g,Alimentos,31,51,109,53,2990,ProvC,6
+P127,Mantequilla 250 g,Alimentos,61,70,120,54,3090,ProvA,4
+P128,Turrón maní 100 g,Snacks y Confitería,4,28,158,23,790,ProvA,4
+P129,Crema de leche 200 ml,Lácteos,57,50,177,19,1490,ProvA,3
+P130,Shampoo anticaspa 400 ml,Higiene Personal,80,44,136,25,3290,ProvB,5
+P131,Fideos 400 g,Alimentos,54,31,111,24,890,ProvB,4
+P132,Palitos de maíz 80 g,Snacks y Confitería,6,43,140,51,290,ProvB,4
+P133,Champú mascotas 250 ml,Mascotas,16,25,52,7,3790,ProvA,3
+P134,Yogurt griego 150 g,Lácteos,72,52,152,36,1390,ProvC,6
+P135,Toalla papel 2 rollos,Limpieza,6,40,131,31,1390,ProvB,4
+P136,Limpiador baño 500 ml,Limpieza,72,29,100,4,1890,ProvC,2
+P137,Chocapic 500 g,Alimentos,10,51,109,48,3090,ProvC,6
+P138,Leche 200 ml (caja),Lácteos,110,37,151,43,490,ProvC,6
+P139,Té 25 bolsitas,Alimentos,12,62,122,37,1090,ProvB,5
+P140,Detergente polvo 1 kg,Limpieza,50,29,129,26,3290,ProvC,6
+P141,Jugo mora 1 L,Bebestibles,20,43,191,41,1190,ProvC,2
+P142,Turrón maní 100 g,Snacks y Confitería,95,28,158,21,890,ProvA,3
+P143,Crema de leche 200 ml,Lácteos,24,50,177,18,1090,ProvA,3
+P144,Protector solar FPS50 100 ml,Higiene Personal,30,24,100,7,4990,ProvA,4
+P145,Pipeta antipulgas gato,Mascotas,14,20,89,15,2290,ProvA,4
+P146,Galletas saladas 150 g,Snacks y Confitería,47,52,126,44,790,ProvC,2
+P147,Mantequilla 250 g,Alimentos,14,70,120,60,2990,ProvA,4
+P148,Palomitas microondas 100 g,Snacks y Confitería,41,42,156,25,890,ProvB,5
+P149,Yogurt natural 200 g,Lácteos,62,44,182,24,690,ProvB,5
+P150,Bebida lima-limón 1.5 L,Bebestibles,28,51,194,36,1290,ProvB,4
+P151,Té helado durazno 1.5 L,Bebestibles,40,60,179,49,1390,ProvC,6
+P152,Bebida naranja 1.5 L,Bebestibles,1,74,162,24,1190,ProvB,5
+P153,Barrita granola 40 g,Snacks y Confitería,87,43,96,45,390,ProvA,3
+P154,Sémola 500 g,Alimentos,4,34,177,47,660,ProvA,4
+P155,Scotch 12mm,Ferretería Básica,120,29,76,8,490,ProvA,4
+P156,Café instantáneo 170 g,Alimentos,17,37,137,42,4990,ProvC,2
+P157,Té helado durazno 1.5 L,Bebestibles,125,60,179,48,1190,ProvC,6
+P158,Pipeta antipulgas gato,Mascotas,36,20,89,21,2390,ProvA,3
+P159,Jugo en caja 1 L,Bebestibles,164,57,164,61,990,ProvA,4
+P160,Chicles sin azúcar 20 g,Snacks y Confitería,10,40,139,47,290,ProvC,6
+P161,Miel 500 g,Alimentos,9,46,174,42,3200,ProvC,6
+P162,Gel ducha 400 ml,Higiene Personal,26,33,132,10,2290,ProvC,6
+P163,Guantes trabajo M,Ferretería Básica,14,26,96,17,990,ProvC,2
+P164,Atún al agua 170 g,Alimentos,48,64,188,32,1190,ProvA,3
+P165,Extensión eléctrica 3 m,Ferretería Básica,39,28,69,15,3990,ProvA,4
+P166,Cama mascota pequeña,Mascotas,4,18,50,1,6790,ProvC,6
+P167,Crema de leche 200 ml,Lácteos,60,50,177,30,1490,ProvA,3
+P168,Suavizante ropa 1 L,Limpieza,23,44,104,11,2490,ProvB,5
+P169,Lavalozas 750 ml,Limpieza,85,39,90,25,1850,ProvC,6
+P170,Vinagre 500 ml,Alimentos,179,64,167,15,190,ProvC,2
+P171,Alimento cachorro 1.5 kg,Mascotas,1,24,56,17,6390,ProvC,2
+P172,Fideos 400 g,Alimentos,113,31,111,28,790,ProvB,4
+P173,Té 25 bolsitas,Alimentos,37,62,122,45,990,ProvB,5
+P174,Frutos secos surtidos 100 g,Snacks y Confitería,99,37,117,36,1590,ProvB,4
+P175,Alcohol gel 500 ml,Higiene Personal,74,26,128,20,2990,ProvB,5
+P176,Té 25 bolsitas,Alimentos,46,62,122,49,1090,ProvB,5
+P177,Té helado limón 1.5 L,Bebestibles,136,59,156,33,1190,ProvC,6
+P178,Atún al agua 170 g,Alimentos,27,64,188,34,1390,ProvA,3
+P179,Mascarillas descartables 10 un,Higiene Personal,24,28,123,18,1490,ProvA,3
+P180,Bebida energética 250 ml,Bebestibles,13,72,159,70,1690,ProvC,2
+P181,Sémola 500 g,Alimentos,26,34,177,63,860,ProvA,3
+P182,Arroz integral 1 kg,Alimentos,30,48,110,29,1680,ProvC,2
+P183,Chocapic 500 g,Alimentos,63,51,109,39,3290,ProvC,6
+P184,Pasta dental mentol 100 ml,Higiene Personal,16,42,97,14,1190,ProvB,5
+P185,Cepillo dental suave,Higiene Personal,83,34,123,11,990,ProvA,3
+P186,Bebida jengibre 1 L,Bebestibles,120,50,180,48,1590,ProvC,6
+P187,Chocolatinas 50 g,Snacks y Confitería,29,42,121,30,590,ProvB,4
+P188,Sardinas en tomate 125 g,Alimentos,187,53,156,45,1290,ProvC,2
+P189,Escoba plástica mediana,Limpieza,106,32,61,11,2990,ProvA,3
+P190,Chocolates leche 100 g,Snacks y Confitería,23,32,151,37,1290,ProvB,5
+P191,Sémola 500 g,Alimentos,16,34,177,55,760,ProvA,3
+P192,Maní tostado 200 g,Snacks y Confitería,23,57,123,11,1090,ProvB,4
+P193,Bebida Cola 1.5 L,Bebestibles,43,62,159,68,1050,ProvA,3
+P194,Queso gauda laminado 200 g,Lácteos,175,49,189,51,2690,ProvC,6
+P195,Insecticida aerosol 400 ml,Limpieza,49,23,96,27,2890,ProvC,2
+P196,Limpiador multiuso 500 ml,Limpieza,66,17,83,11,1390,ProvB,4
+P197,Mascarilla N95 x5,Ferretería Básica,125,27,77,8,2990,ProvB,4
+P198,Toallas húmedas 40 un,Higiene Personal,5,20,120,21,1490,ProvA,4
+P199,Queso fresco 250 g,Lácteos,8,58,110,46,1890,ProvB,5
+P200,Palomitas microondas 100 g,Snacks y Confitería,10,42,156,37,790,ProvB,4
+P201,Queso parmesano rallado 100 g,Lácteos,7,51,152,67,2790,ProvB,4
+P202,Guantes domésticos M,Limpieza,65,43,105,14,1190,ProvA,3
+P203,Servilletas 100 un,Limpieza,8,21,67,31,490,ProvA,3
+P204,Shampoo anticaspa 400 ml,Higiene Personal,5,44,136,25,2990,ProvB,4
+P205,Puré instantáneo 125 g,Alimentos,19,40,159,44,790,ProvC,2
+P206,Limpiavidrios 500 ml,Limpieza,15,27,64,33,1490,ProvB,5
+P207,Esponjas fibra 3 un,Limpieza,27,42,80,21,590,ProvC,2
+P208,Pan molde blanco,Alimentos,14,44,104,35,1490,ProvC,6
+P209,Agua 5 L,Bebestibles,182,68,198,66,1490,ProvB,5
+P210,Galletas arroz 100 g,Snacks y Confitería,209,42,155,48,590,ProvA,4
+P211,Papas fritas 100 g,Snacks y Confitería,35,27,124,49,890,ProvA,4
+P212,Maní tostado 200 g,Snacks y Confitería,179,57,123,17,1290,ProvB,5
+P213,Mantequilla 250 g,Alimentos,94,70,120,58,2990,ProvA,4
+P214,Bolsas plásticas 30 un,Limpieza,32,39,131,12,890,ProvB,5
+P215,Queso fresco 250 g,Lácteos,105,58,110,53,1990,ProvB,4
+P216,Silicona líquida 25 g,Ferretería Básica,10,24,100,21,1190,ProvB,5
+P217,Galletas rellenas 150 g,Snacks y Confitería,37,30,100,24,990,ProvB,5
+P218,Cereales 500 g,Alimentos,107,39,133,23,2490,ProvA,3
+P219,Chocapic 500 g,Alimentos,47,51,109,42,3090,ProvC,6
+P220,Limpiavidrios 500 ml,Limpieza,15,27,64,23,1590,ProvB,4
+P221,Acondicionador 400 ml,Higiene Personal,31,42,106,33,3090,ProvA,4
+P222,Mantequilla 250 g,Alimentos,50,70,120,74,3290,ProvA,4
+P223,Agua saborizada 1 L,Bebestibles,13,45,150,63,990,ProvA,4
+P224,Queso crema 180 g,Lácteos,46,59,152,23,2090,ProvB,5
+P225,Sardinas en tomate 125 g,Alimentos,117,53,156,46,1090,ProvC,2
+P226,Pasta dental mentol 100 ml,Higiene Personal,35,42,97,11,1290,ProvB,5
+P227,Salsa tomate 400 g,Alimentos,22,53,139,37,690,ProvB,4
+P228,Lavalozas 750 ml,Limpieza,44,39,90,18,1650,ProvC,2
+P229,Papel hig. suave pack 4 un,Higiene Personal,91,43,91,22,2690,ProvB,5
+P230,Shampoo anticaspa 400 ml,Higiene Personal,6,44,136,31,3390,ProvB,5
+P231,Cacao en polvo 200 g,Alimentos,69,70,164,49,1990,ProvA,4
+P232,Lavalozas 750 ml,Limpieza,31,39,90,14,1450,ProvC,2
+P233,Servilletas 100 un,Limpieza,98,21,67,34,590,ProvA,4
+P234,Acondicionador 400 ml,Higiene Personal,35,42,106,17,2990,ProvA,4
+P235,Crema de leche 200 ml,Lácteos,56,50,177,24,1290,ProvA,4
+P236,Servilletas 100 un,Limpieza,53,21,67,35,190,ProvA,3
+P237,Acondicionador 400 ml,Higiene Personal,25,42,106,12,2990,ProvA,4
+P238,Queso parmesano rallado 100 g,Lácteos,46,51,152,54,2690,ProvB,5
+P239,Ampolleta LED 9W,Ferretería Básica,135,35,103,15,1890,ProvA,3
+P240,Chips camote 80 g,Snacks y Confitería,132,59,96,32,990,ProvC,2
+P241,Barrita granola 40 g,Snacks y Confitería,79,43,96,46,590,ProvA,3
+P242,Baterías recargables AA x2,Ferretería Básica,26,35,66,15,3090,ProvB,5
+P243,Ampolleta LED 9W,Ferretería Básica,122,35,103,22,2190,ProvA,3
+P244,Cloro 1 L,Limpieza,126,18,66,28,990,ProvC,2
+P245,Fideos 400 g,Alimentos,1,31,111,28,890,ProvB,4
+P246,Leche condensada 397 g,Alimentos,29,57,152,44,2190,ProvC,2
+P247,Juguete perro,Mascotas,6,17,86,18,2590,ProvC,2
+P248,Pegamento universal 30 g,Ferretería Básica,108,32,70,10,890,ProvC,6
+P249,Azúcar 1 kg,Alimentos,36,65,125,60,1150,ProvB,5
+P250,Acondicionador 400 ml,Higiene Personal,52,42,106,25,2990,ProvA,3
+P251,Recogedor plástico,Limpieza,20,43,79,22,1890,ProvB,5
+P252,Escoba plástica mediana,Limpieza,112,32,61,7,2890,ProvA,4
+P253,Comedero plástico 400 ml,Mascotas,3,11,70,20,1490,ProvB,5
+P254,Crema de leche 200 ml,Lácteos,9,50,177,25,1290,ProvA,4
+P255,Alimento cachorro 1.5 kg,Mascotas,50,24,56,19,6490,ProvC,2
+P256,Toallas húmedas 40 un,Higiene Personal,16,20,120,21,1490,ProvA,3
+P257,Mostaza 200 g,Alimentos,127,38,116,57,790,ProvC,6
+P258,Desodorante roll-on 50 ml,Higiene Personal,9,32,131,17,2190,ProvB,5
+P259,Aromatizante hogar 360 ml,Limpieza,4,36,93,24,1990,ProvA,4
+P260,Alcohol gel 500 ml,Higiene Personal,42,26,128,16,3390,ProvB,5
+P261,Margarina 500 g,Alimentos,122,54,176,57,1990,ProvC,6
+P262,Caramelos surtidos 200 g,Snacks y Confitería,15,55,142,43,890,ProvA,3
+P263,Ketchup 380 g,Alimentos,227,46,167,53,990,ProvB,5
+P264,Galletas María 200 g,Alimentos,48,65,128,64,790,ProvB,4
+P265,Pipeta antipulgas perro S,Mascotas,12,30,59,12,2290,ProvB,5
+P266,Tapones oídos x10,Ferretería Básica,82,30,113,31,690,ProvA,4
+P267,Tomate enlatado 400 g,Alimentos,3,34,190,55,790,ProvA,3
+P268,Leche condensada 397 g,Alimentos,44,57,152,52,1990,ProvC,2
+P269,Cacao en polvo 200 g,Alimentos,28,70,164,47,1990,ProvA,3
+P270,Bebida energética 250 ml,Bebestibles,38,72,159,62,1490,ProvC,6
+P271,Toallas húmedas 40 un,Higiene Personal,14,20,120,28,1590,ProvA,3
+P272,Salsa tomate 400 g,Alimentos,135,53,139,32,690,ProvB,5
+P273,Detergente líquido 3 L,Limpieza,18,23,119,15,4590,ProvC,2
+P274,Manjar 400 g,Lácteos,16,38,136,43,1990,ProvC,6
+P275,Pan molde blanco,Alimentos,100,44,104,33,1590,ProvC,6
+P276,Chocapic 500 g,Alimentos,25,51,109,53,2990,ProvC,6
+P277,Bebida isotónica 500 ml,Bebestibles,137,61,199,40,990,ProvB,4
+P278,Turrones 100 g,Snacks y Confitería,31,42,119,34,1490,ProvB,4
+P279,Cama mascota pequeña,Mascotas,6,18,50,8,6990,ProvC,2
+P280,Vinagre 500 ml,Alimentos,203,64,167,20,390,ProvC,6
+P281,Cama mascota pequeña,Mascotas,19,18,50,7,6990,ProvC,2
+P282,Shampoo hidratante 400 ml,Higiene Personal,178,39,147,29,2990,ProvB,5
+P283,Bebida toronja 1.5 L,Bebestibles,96,70,141,60,1090,ProvB,5
+P284,Jugo en caja 1 L,Bebestibles,158,57,164,61,1290,ProvA,3
+P285,Queso gauda laminado 200 g,Lácteos,32,49,189,40,2490,ProvC,6
+P286,Margarina 500 g,Alimentos,29,54,176,50,1790,ProvC,2
+P287,Chocapic 500 g,Alimentos,46,51,109,37,3390,ProvC,6
+P288,Atún al agua 170 g,Alimentos,43,64,188,27,1290,ProvA,4
+P289,Margarina 500 g,Alimentos,232,54,176,44,1590,ProvC,6
+P290,Protector solar FPS50 100 ml,Higiene Personal,96,24,100,14,4990,ProvA,4
+P291,Palitos de maíz 80 g,Snacks y Confitería,4,43,140,45,490,ProvB,5
+P292,Porotos 500 g,Alimentos,116,37,148,20,1290,ProvA,4
+P293,Chocapic 500 g,Alimentos,32,51,109,47,2890,ProvC,2
+P294,Papas fritas 100 g,Snacks y Confitería,16,27,124,42,890,ProvA,3
+P295,Leche condensada 397 g,Alimentos,139,57,152,44,1990,ProvC,2
+P296,Mermelada frutilla 350 g,Alimentos,48,62,163,13,1990,ProvB,4
+P297,Bebida frutada 1.5 L,Bebestibles,71,71,171,35,1190,ProvA,3
+P298,Cama mascota pequeña,Mascotas,13,18,50,4,6790,ProvC,2
+P299,Linterna LED pequeña,Ferretería Básica,39,22,100,14,3490,ProvC,6
+P300,Enjuague bucal 500 ml,Higiene Personal,59,44,73,23,2190,ProvB,4
+P301,Cloro gel 500 ml,Limpieza,35,40,112,31,1290,ProvA,4
+P302,Galletas chocolate 150 g,Alimentos,3,43,169,24,890,ProvB,4
+P303,Suavizante ropa 1 L,Limpieza,26,44,104,18,2490,ProvB,4
+P304,Snacks gato 60 g,Mascotas,5,17,79,9,1190,ProvB,5
+P305,Limpiador multiuso 500 ml,Limpieza,76,17,83,6,1490,ProvB,5
+P306,Lentejas 500 g,Alimentos,120,52,177,31,1350,ProvA,3
+P307,Agua 5 L,Bebestibles,110,68,198,72,1290,ProvB,5
+P308,Quitagrasa 500 ml,Limpieza,23,27,75,32,1890,ProvC,2
+P309,Miel 500 g,Alimentos,16,46,174,45,3200,ProvC,6
+P310,Pan molde blanco,Alimentos,19,44,104,29,1290,ProvC,6
+P311,Palomitas microondas 100 g,Snacks y Confitería,13,42,156,32,690,ProvB,4
+P312,Blanqueador ropa 1 L,Limpieza,54,45,77,16,1390,ProvB,4
+P313,Correa perro básica,Mascotas,8,14,78,21,3090,ProvB,4
+P314,Sardinas en tomate 125 g,Alimentos,109,53,156,47,1390,ProvC,2
+P315,Barras de cereal 30 g,Snacks y Confitería,79,36,142,28,490,ProvA,4
+P316,Mayonesa 400 g,Alimentos,145,35,110,46,1490,ProvA,3
+P317,Leche de soya 1 L,Lácteos,186,67,155,55,2090,ProvA,4
+P318,Shampoo anticaspa 400 ml,Higiene Personal,133,44,136,30,3190,ProvB,4
+P319,Jabón líquido manos 500 ml,Higiene Personal,5,22,87,14,1890,ProvC,2
+P320,Tapones oídos x10,Ferretería Básica,10,30,113,21,890,ProvA,4
+P321,Escoba plástica mediana,Limpieza,3,32,61,17,2890,ProvA,4
+P322,Aceite 900 ml,Alimentos,184,36,186,43,1900,ProvB,5
+P323,Algodón 100 g,Higiene Personal,11,24,129,15,990,ProvC,2
+P324,Chocolatinas 50 g,Snacks y Confitería,63,42,121,28,790,ProvB,5
+P325,Galletas María 200 g,Alimentos,72,65,128,58,590,ProvB,5
+P326,Agua 5 L,Bebestibles,23,68,198,71,1690,ProvB,4
+P327,Papel higiénico 4 rollos,Limpieza,63,23,118,20,1790,ProvA,4
+P328,Fideos 400 g,Alimentos,171,31,111,25,990,ProvB,5
+P329,Vinagre 500 ml,Alimentos,18,64,167,17,190,ProvC,2
+P330,Pan molde blanco,Alimentos,143,44,104,45,1490,ProvC,2
+P331,Pretzels 100 g,Snacks y Confitería,30,47,134,50,790,ProvC,6
+P332,Esponjas pack 3 un,Limpieza,25,42,111,9,890,ProvB,4
+P333,Vinagre 500 ml,Alimentos,25,64,167,20,490,ProvC,2
+P334,Leche entera 1 L,Lácteos,8,30,152,43,1090,ProvB,5
+P335,Nachos 150 g,Snacks y Confitería,34,50,111,34,990,ProvB,5
+P336,Néctares surtidos 1 L,Bebestibles,117,52,152,18,1090,ProvC,6
+P337,Snacks perro 100 g,Mascotas,79,19,82,13,1490,ProvC,6
+P338,Galletas chocolate 100 g,Snacks y Confitería,104,58,114,51,1090,ProvA,4
+P339,Jugo mora 1 L,Bebestibles,212,43,191,36,1190,ProvC,2
+P340,Vinagre 500 ml,Alimentos,6,64,167,17,490,ProvC,2
+P341,Cinta de embalaje 48mm,Ferretería Básica,24,30,118,15,1190,ProvB,5
+P342,Cinta adhesiva 18mm,Ferretería Básica,3,20,71,3,390,ProvC,6
+P343,Agua mineral 1.5 L,Bebestibles,150,52,171,41,780,ProvA,4
+P344,Lustramuebles 300 ml,Limpieza,20,36,100,15,1590,ProvB,5
+P345,Papel higiénico 4 rollos,Limpieza,116,23,118,17,1990,ProvA,4
+P346,Pipeta antipulgas gato,Mascotas,18,20,89,10,2690,ProvA,3
+P347,Ketchup 380 g,Alimentos,119,46,167,52,1090,ProvB,4
+P348,Escoba plástica mediana,Limpieza,34,32,61,8,2990,ProvA,4
+P349,Bebida uva 1.5 L,Bebestibles,103,73,191,60,1090,ProvA,3
+P350,Agua con gas 1.5 L,Bebestibles,225,52,166,47,890,ProvA,3
+P351,Servilletas 100 un,Limpieza,18,21,67,28,490,ProvA,4
+P352,Café instantáneo 170 g,Alimentos,15,37,137,43,4590,ProvC,6
+P353,Cinta de embalaje 48mm,Ferretería Básica,9,30,118,12,990,ProvB,4
+P354,Palomitas microondas 100 g,Snacks y Confitería,34,42,156,32,690,ProvB,5
+P355,Té 25 bolsitas,Alimentos,100,62,122,40,990,ProvB,4
+P356,Cereales 500 g,Alimentos,124,39,133,17,2690,ProvA,3
+P357,Queso parmesano rallado 100 g,Lácteos,142,51,152,56,2890,ProvB,4
+P358,Crema ácida 200 g,Lácteos,23,65,104,42,1690,ProvA,4
+P359,Pipeta antipulgas gato,Mascotas,17,20,89,13,2490,ProvA,4
+P360,Tapones oídos x10,Ferretería Básica,60,30,113,23,990,ProvA,4
+P361,Galletas chocolate 150 g,Alimentos,31,43,169,23,790,ProvB,5
+P362,Bebida naranja 1.5 L,Bebestibles,107,74,162,21,1290,ProvB,4
+P363,Lavalozas 750 ml,Limpieza,2,39,90,25,1650,ProvC,2
+P364,Bolsas plásticas 30 un,Limpieza,104,39,131,16,690,ProvB,4
+P365,Cloro gel 500 ml,Limpieza,7,40,112,29,1390,ProvA,3
+P366,Arena sanitaria 4 kg,Mascotas,74,12,67,17,3590,ProvA,3
+P367,Bebida Cola 1.5 L,Bebestibles,43,62,159,70,1350,ProvA,3
+P368,Queso parmesano rallado 100 g,Lácteos,26,51,152,59,2890,ProvB,5
+P369,Margarina 500 g,Alimentos,8,54,176,56,1990,ProvC,2
+P370,Alimento gato adulto 1.5 kg,Mascotas,12,13,79,8,5990,ProvA,3
+P371,Esponjas pack 3 un,Limpieza,79,42,111,8,690,ProvB,4
+P372,Limpiador baño 500 ml,Limpieza,19,29,100,10,1690,ProvC,2
+P373,Toalla papel 2 rollos,Limpieza,19,40,131,29,1290,ProvB,5
+P374,Manjar 400 g,Lácteos,109,38,136,45,2190,ProvC,2
+P375,Maní tostado 200 g,Snacks y Confitería,70,57,123,15,1090,ProvB,5
+P376,Cacao 400 g,Alimentos,101,56,124,21,2190,ProvA,3
+P377,Agua 5 L,Bebestibles,29,68,198,64,1090,ProvB,5
+P378,Mayonesa 400 g,Alimentos,15,35,110,40,1490,ProvA,4
+P379,Bebida jengibre 1 L,Bebestibles,10,50,180,56,1690,ProvC,6
+P380,Té helado limón 1.5 L,Bebestibles,67,59,156,29,1190,ProvC,6
+P381,Trapeador algodón,Limpieza,62,35,93,13,3490,ProvC,6
+P382,Papas fritas 100 g,Snacks y Confitería,13,27,124,54,790,ProvA,4
+P383,Cinta adhesiva 18mm,Ferretería Básica,70,20,71,10,590,ProvC,2
+P384,Mermelada frutilla 350 g,Alimentos,73,62,163,35,1890,ProvB,4
+P385,Harina 1 kg,Alimentos,5,30,120,59,980,ProvA,4
+P386,Leche 200 ml (caja),Lácteos,205,37,151,47,290,ProvC,2
+P387,Bebida sin azúcar 1.5 L,Bebestibles,93,62,160,40,1590,ProvA,3
+P388,Comedero plástico 400 ml,Mascotas,53,11,70,28,1290,ProvB,5
+P389,Depiladora desechable 3 un,Higiene Personal,95,23,108,31,1190,ProvB,4
+P390,Limpiador multiuso 500 ml,Limpieza,37,17,83,3,1290,ProvB,5
+P391,Maicena 400 g,Alimentos,150,36,107,33,690,ProvB,5
+P392,Levadura seca 11 g,Alimentos,12,45,124,27,490,ProvA,4
+P393,Papel hig. suave pack 4 un,Higiene Personal,21,43,91,21,2690,ProvB,5
+P394,Enjuague bucal 500 ml,Higiene Personal,63,44,73,17,2390,ProvB,4
+P395,Tapones oídos x10,Ferretería Básica,98,30,113,24,790,ProvA,4
+P396,Limpiador multiuso 500 ml,Limpieza,47,17,83,10,1390,ProvB,4
+P397,Acondicionador 400 ml,Higiene Personal,59,42,106,20,3190,ProvA,3
+P398,Servilletas 100 un,Limpieza,24,21,67,26,590,ProvA,3
+P399,Toallas húmedas 40 un,Higiene Personal,14,20,120,21,1790,ProvA,3
+P400,Depiladora desechable 3 un,Higiene Personal,6,23,108,37,1390,ProvB,5
+P401,Galletas chocolate 100 g,Snacks y Confitería,53,58,114,49,890,ProvA,4
+P402,Bebida naranja 1.5 L,Bebestibles,40,74,162,16,1290,ProvB,5
+P403,Crema de leche 200 ml,Lácteos,46,50,177,25,1290,ProvA,4
+P404,Juguete perro,Mascotas,6,17,86,11,2390,ProvC,6
+P405,Queso crema 180 g,Lácteos,40,59,152,18,2190,ProvB,4
+P406,Bebida uva 1.5 L,Bebestibles,212,73,191,50,1190,ProvA,3
+P407,Pila AAA x4,Ferretería Básica,8,15,62,24,1090,ProvB,5
+P408,Salsa tomate 400 g,Alimentos,37,53,139,30,890,ProvB,4
+P409,Bebida toronja 1.5 L,Bebestibles,43,70,141,62,1290,ProvB,4
+P410,Shampoo anticaspa 400 ml,Higiene Personal,171,44,136,18,3190,ProvB,4
+P411,Chips camote 80 g,Snacks y Confitería,48,59,96,40,1190,ProvC,2
+P412,Alcohol gel 500 ml,Higiene Personal,5,26,128,23,3190,ProvB,5
+P413,Lavalozas 750 ml,Limpieza,14,39,90,13,1450,ProvC,6
+P414,Turrones 100 g,Snacks y Confitería,13,42,119,31,1290,ProvB,4
+P415,Guantes trabajo M,Ferretería Básica,22,26,96,17,990,ProvC,6
+P416,Chocapic 500 g,Alimentos,92,51,109,55,3090,ProvC,2
+P417,Detergente líquido 3 L,Limpieza,89,23,119,16,4590,ProvC,6
+P418,Galletas rellenas 150 g,Snacks y Confitería,50,30,100,30,890,ProvB,4
+P419,Jugo manzana natural 1 L,Bebestibles,1,51,198,56,1890,ProvA,4
+P420,Crema ácida 200 g,Lácteos,42,65,104,44,1490,ProvA,3
+P421,Pan molde blanco,Alimentos,134,44,104,36,1290,ProvC,6
+P422,Esponjas fibra 3 un,Limpieza,22,42,80,13,790,ProvC,6
+P423,Bebida frutada 1.5 L,Bebestibles,69,71,171,37,1390,ProvA,4
+P424,Papel hig. suave pack 4 un,Higiene Personal,126,43,91,24,2490,ProvB,4
+P425,Collar perro ajustable,Mascotas,26,27,74,23,1990,ProvA,3
+P426,Arroz 1 kg,Alimentos,18,70,114,16,1250,ProvA,4
+P427,Detergente líquido 3 L,Limpieza,29,23,119,9,4590,ProvC,6
+P428,Comedero plástico 400 ml,Mascotas,2,11,70,23,1690,ProvB,5
+P429,Jugo naranja natural 1 L,Bebestibles,99,75,136,32,1990,ProvB,5
+P430,Recogedor plástico,Limpieza,78,43,79,25,1990,ProvB,4
+P431,Avena 500 g,Alimentos,15,53,173,27,1490,ProvB,4
+P432,Detergente polvo 1 kg,Limpieza,43,29,129,33,3090,ProvC,2
+P433,Crema de leche 200 ml,Lácteos,24,50,177,27,1190,ProvA,3
+P434,Queso parmesano rallado 100 g,Lácteos,36,51,152,56,2990,ProvB,5
+P435,Depiladora desechable 3 un,Higiene Personal,17,23,108,32,990,ProvB,5
+P436,Desengrasante 750 ml,Limpieza,84,34,70,21,2190,ProvA,4
+P437,Té 25 bolsitas,Alimentos,81,62,122,47,990,ProvB,4
+P438,Cacao en polvo 200 g,Alimentos,21,70,164,53,1890,ProvA,3
+P439,Arena sanitaria 4 kg,Mascotas,7,12,67,21,3390,ProvA,3
+P440,Pasta dental mentol 100 ml,Higiene Personal,21,42,97,17,1190,ProvB,5
+P441,Pila AA x4,Ferretería Básica,10,18,108,11,1290,ProvC,6
+P442,Cinta adhesiva 18mm,Ferretería Básica,5,20,71,11,690,ProvC,2
+P443,Mantequilla 250 g,Alimentos,15,70,120,66,3190,ProvA,3
+P444,Pipeta antipulgas gato,Mascotas,13,20,89,15,2590,ProvA,3
+P445,Café instantáneo 170 g,Alimentos,84,37,137,42,4790,ProvC,6
+P446,Bolsas plásticas 30 un,Limpieza,147,39,131,21,690,ProvB,4
+P447,Papel hig. suave pack 4 un,Higiene Personal,16,43,91,26,2790,ProvB,4
+P448,Pan molde blanco,Alimentos,7,44,104,37,1390,ProvC,2
+P449,Pipeta antipulgas gato,Mascotas,88,20,89,17,2490,ProvA,3
+P450,Yogurt frutado 200 g,Lácteos,30,33,121,34,790,ProvA,4
+P451,Té 25 bolsitas,Alimentos,1,62,122,50,790,ProvB,4
+P452,Correa perro básica,Mascotas,13,14,78,20,2990,ProvB,5
+P453,Crema de leche 200 ml,Lácteos,74,50,177,27,1390,ProvA,3
+P454,Shampoo hidratante 400 ml,Higiene Personal,29,39,147,34,2890,ProvB,4
+P455,Hilo dental 50 m,Higiene Personal,39,37,76,21,790,ProvC,2
+P456,Bebida Cola 1.5 L,Bebestibles,91,62,159,64,1250,ProvA,3
+P457,Insecticida aerosol 400 ml,Limpieza,15,23,96,31,2990,ProvC,2
+P458,Crema de manos 100 ml,Higiene Personal,60,50,97,24,1390,ProvC,6
+P459,Vinagre 500 ml,Alimentos,191,64,167,18,390,ProvC,6
+P460,Baterías recargables AA x2,Ferretería Básica,63,35,66,15,2990,ProvB,5
+P461,Crema de leche 200 ml,Lácteos,47,50,177,23,1090,ProvA,4
+P462,Conserva champiñones 180 g,Alimentos,34,34,143,16,1190,ProvB,4
+P463,Guantes trabajo M,Ferretería Básica,76,26,96,11,990,ProvC,2
+P464,Desatascador manual,Ferretería Básica,19,21,84,23,2490,ProvA,3
+P465,Leche de avena 1 L,Lácteos,89,41,160,45,2190,ProvB,4
+P466,Bebida naranja 1.5 L,Bebestibles,66,74,162,25,1490,ProvB,4
+P467,Crema ácida 200 g,Lácteos,52,65,104,45,1590,ProvA,3
+P468,Champú mascotas 250 ml,Mascotas,20,25,52,15,3590,ProvA,4
+P469,Agua mineral 1.5 L,Bebestibles,16,52,171,33,780,ProvA,4
+P470,Toallas húmedas 40 un,Higiene Personal,15,20,120,28,1390,ProvA,3
+P471,Chocolatinas 50 g,Snacks y Confitería,18,42,121,32,590,ProvB,4
+P472,Chupetes 10 un,Snacks y Confitería,5,53,136,34,690,ProvC,2
+P473,Palomitas microondas 100 g,Snacks y Confitería,7,42,156,25,790,ProvB,4
+P474,Cereales 500 g,Alimentos,9,39,133,13,2490,ProvA,4
+P475,Aceite 900 ml,Alimentos,44,36,186,49,2100,ProvB,4
+P476,Acondicionador 400 ml,Higiene Personal,32,42,106,20,3190,ProvA,4
+P477,Juguete perro,Mascotas,69,17,86,17,2490,ProvC,2
+P478,Jabón líquido manos 500 ml,Higiene Personal,66,22,87,7,1790,ProvC,2
+P479,Guantes trabajo M,Ferretería Básica,19,26,96,11,790,ProvC,2
+P480,Baterías recargables AA x2,Ferretería Básica,37,35,66,9,2990,ProvB,5
+P481,Ampolleta LED 9W,Ferretería Básica,11,35,103,24,1990,ProvA,4
+P482,Chocapic 500 g,Alimentos,26,51,109,43,3090,ProvC,6
+P483,Queso fresco 250 g,Lácteos,102,58,110,60,1990,ProvB,5
+P484,Leche semi 1 L,Lácteos,15,48,190,33,1090,ProvA,4
+P485,Bebida toronja 1.5 L,Bebestibles,67,70,141,68,1090,ProvB,4
+P486,Alimento cachorro 1.5 kg,Mascotas,22,24,56,15,6490,ProvC,6
+P487,Conserva champiñones 180 g,Alimentos,60,34,143,10,1390,ProvB,4
+P488,Bolsas basura 10 un grande,Limpieza,9,16,134,23,890,ProvC,2
+P489,Sémola 500 g,Alimentos,173,34,177,52,860,ProvA,4
+P490,Queso parmesano rallado 100 g,Lácteos,5,51,152,62,2890,ProvB,4
+P491,Galletas chocolate 150 g,Alimentos,14,43,169,26,690,ProvB,5
+P492,Mascarillas descartables 10 un,Higiene Personal,81,28,123,10,1590,ProvA,4
+P493,Maicena 400 g,Alimentos,49,36,107,40,890,ProvB,5
+P494,Jabón líquido manos 500 ml,Higiene Personal,11,22,87,11,1890,ProvC,6
+P495,Galletas chocolate 100 g,Snacks y Confitería,124,58,114,48,990,ProvA,4
+P496,Chicles sin azúcar 20 g,Snacks y Confitería,24,40,139,47,590,ProvC,2
+P497,Desodorante roll-on 50 ml,Higiene Personal,102,32,131,10,1890,ProvB,5
+P498,Chocolates leche 100 g,Snacks y Confitería,80,32,151,41,1190,ProvB,4
+P499,Pipeta antipulgas gato,Mascotas,1,20,89,7,2290,ProvA,4
+P500,Pasta dental mentol 100 ml,Higiene Personal,4,42,97,14,1290,ProvB,4
